@@ -1,18 +1,49 @@
-# Twitter Sentiment Analysis Project
+# Sentiment Analysis Project
 
-This project classifies tweets from Twitter into positive, negative, or neutral categories using natural language processing (NLP) techniques.
+## 📌 Description
+This project performs sentiment analysis on user comments using **TextBlob**. The data is cleaned using **NLTK** before applying sentiment classification.
 
-## Technologies Used:
-- **Python**: Main programming language for data processing and model building.
-- **Tweepy**: To interact with the Twitter API and gather real-time tweet data.
-- **Scikit-learn**: For machine learning models like Naive Bayes, Logistic Regression.
-- **TensorFlow/Keras**: For deep learning models (LSTM, BiLSTM).
-- **Hugging Face Transformers**: For BERT-based sentiment analysis.
-- **Matplotlib/Seaborn**: For visualizations (bar charts, pie charts).
-- **Flask/Django**: To deploy the model as a web application.
-  
-## Installation:
-1. Clone the repository:
+## 📂 Project Structure
+```
+Sentiment-Analysis/
+├── data/
+│   ├── raw_sentiment_data.csv   # Store the dataset here
+├── notebooks/
+│   ├── sentiment_analysis.ipynb  # Jupyter Notebook for analysis
+├── scripts/
+│   ├── preprocess.py  # Text cleaning functions
+│   ├── analyze.py  # Sentiment analysis function
+├── requirements.txt  # List of dependencies
+├── README.md  # Project documentation
+├── .gitignore  # Ignore unnecessary files
+```
+
+## 🛠 Installation
+1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/twitter-sentiment-analysis.git
-   cd twitter-sentiment-analysis
+   git clone https://github.com/yourusername/Sentiment-Analysis.git
+   ```
+2. Navigate to the project folder:
+   ```bash
+   cd Sentiment-Analysis
+   ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## 🚀 How to Use
+Run the Jupyter Notebook inside `notebooks/` to see the sentiment analysis in action.
+
+## 📊 Example Output
+| Comment | Sentiment |
+|---------|----------|
+| I love this product! | Positive |
+| This is the worst experience ever. | Negative |
+
+## 🎯 Features
+- Data Cleaning with **NLTK**
+- Sentiment Analysis using **TextBlob**
+- Data Visualization with **Matplotlib & Seaborn**
+
+---
