@@ -21,7 +21,7 @@ Sentiment-Analysis/
 ## 🛠 Installation
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/Sentiment-Analysis.git
+   git clone [https://github.com/Suraj-Sedai/Sentiment-Analysis.git]
    ```
 2. Navigate to the project folder:
    ```bash
