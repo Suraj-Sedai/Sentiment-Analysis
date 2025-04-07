@@ -1,10 +1,6 @@
 from textblob import TextBlob
 
 def get_sentiment(text):
-    """
-    Function to classify sentiment as Positive, Neutral, or Negative
-    based on TextBlob sentiment polarity score.
-    """
     analysis = TextBlob(text)
     if analysis.sentiment.polarity > 0:
         return 'Positive'
@@ -12,3 +8,7 @@ def get_sentiment(text):
         return 'Neutral'
     else:
         return 'Negative'
+
+def analyze_sentiment(data):
+    data['sentiment'] = data['cleaned_text'].apply(get_sentiment)
+    return data
